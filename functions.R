@@ -7,5 +7,8 @@ FisherZTransformation <- function(r) {
   #
   # Returns:
   #.  z: Fisher's z-score
-
+  
+  z = .5[log(1+r) – log(1-r)]
+  
+  return(z)
 }
