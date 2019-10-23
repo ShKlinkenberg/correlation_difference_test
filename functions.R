@@ -32,7 +32,7 @@ ComparingIndependentCorrelation <- function(r, n) {
   
   z.observed = (z[1] - z[2]) / sqrt( (1 / (n[1]-3)) + (1 / (n[2]-3)) )
   
-  p.value = qnorm(z.observed)
+  p.value = pnorm(z.observed)
   
   return(p.value)
 }
