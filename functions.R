@@ -12,3 +12,17 @@ FisherZTransformation <- function(r) {
   
   return(z)
 }
+
+ComparingIndependentCorrelation <- function(r, n) {
+  # Test the significance between two independent correlation coefficients
+  # Source: https://www.statisticssolutions.com/comparing-correlation-coefficients/
+  #
+  # Args:
+  #   r: vector of two correlation values
+  #   n: vector of two sample size values
+  #
+  # Returns:
+  #   The significance of the correlation
+  
+  
+}
