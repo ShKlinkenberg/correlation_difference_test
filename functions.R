@@ -22,7 +22,7 @@ ComparingIndependentCorrelation <- function(r, n) {
   #   n: vector of two sample size values
   #
   # Returns:
-  #   The significance of the correlation
+  #   The significance of the correlation and the z score
   
   r.abs = abs(r)
   
@@ -34,5 +34,7 @@ ComparingIndependentCorrelation <- function(r, n) {
   
   p.value = pnorm(z.observed)
   
-  return(p.value)
+  return(list( z = z.observed,
+               p = p.value)
+         )
 }
